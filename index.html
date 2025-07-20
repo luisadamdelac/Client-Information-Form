@@ -1,0 +1,104 @@
+<html>
+  <title>Client Information Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+ 
+    <header class="header">
+    <img src="assets/Client.png" alt="Brand Logo" class="logo" />
+    <h1>Client Information Form</h1>
+    <p>Your details help us deliver the best service possible.</p>
+  </header>
+
+  <main class="main">
+    <form class="form" autocomplete="off" action="#" method="POST" enctype="multipart/form-data">
+      
+     <div class="section">
+  <div class="section-title">
+    <span class="icon" aria-hidden="true">
+      <i class="fa-solid fa-user"></i>
+    </span>
+    <span>Personal Information</span>
+  </div>
+</div>
+        
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Luis Adam Dela Cruz" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="luisadamdelacruz8@gmail.com" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="0912 345 6789" />
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span class="icon" aria-hidden="true">
+            <i class="fa-solid fa-lightbulb"></i>
+          </span>
+          <span>Project Details</span>
+        </div>
+        <label for="title">Project Title</label>
+        <input type="text" id="title" name="title" required placeholder="Project Ko" />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required placeholder="Description of the project"></textarea>
+
+        <label for="type">Type of Project</label>
+        <select id="type" name="type" required>
+          <option value="">Choose type</option>
+          <option value="web">Web Design</option>
+          <option value="branding">Branding</option>
+          <option value="content">Content Creation</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span class="icon" aria-hidden="true">
+            <i class="fa-solid fa-file"></i>
+          </span>
+          <span>File & Content Provision</span>
+        </div>
+        <label for="file">Upload File</label>
+        <input type="file" id="file" name="file" />
+
+        <label for="summary">Content Summary</label>
+        <textarea id="summary" name="summary" placeholder="Summarize your content or attach details"></textarea>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span class="icon" aria-hidden="true">
+            <i class="fa-solid fa-square-check"></i>
+          </span>
+          <span>Approvals & Follow-ups</span>
+        </div>
+        <label for="contact-method">Preferred Contact Method</label>
+        <select id="contact-method" name="contact-method">
+          <option>Email</option>
+          <option>Phone</option>
+        </select>
+
+        <label for="followup">Next Follow-up Date</label>
+        <input type="date" id="followup" name="followup" />
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <span class="icon" aria-hidden="true">
+            <i class="fa-solid fa-signature"></i>
+          </span>
+          <span>Signature</span>
+        </div>
+        <input type="text" name="signature" placeholder="Type your name as signature" />
+      </div>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
